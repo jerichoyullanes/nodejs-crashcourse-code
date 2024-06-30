@@ -1,5 +1,5 @@
 import http from 'http';
-const PORT = 8000;
+const PORT = process.env.PORT;
 
 const server = http.createServer((req, res) => {
 
@@ -16,6 +16,9 @@ const server = http.createServer((req, res) => {
     
     // res.writeHead(500, { 'Content-Type': 'application/json' })
     // res.end(JSON.stringify({message: 'Server Error'}));
+
+    console.log(req.url);
+    console.log(req.method);
 
     res.writeHead(200, { 'Content-Type': 'text/html' })
     res.end('<h1> Hello World! </h1>');
