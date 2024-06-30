@@ -9,5 +9,8 @@
     "start": "node server.js"
   },
   "author": "Jericho Yu Llanes",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
