@@ -1,0 +1,2 @@
+This is from the text file used for fsDemo.js
+ This is appended text
